@@ -1,0 +1,5 @@
+output-virtualbox
+packer_cache
+.vagrant
+crash.log
+*.box
