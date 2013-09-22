@@ -1,0 +1,20 @@
+{
+  "name": "default",
+  "default_attributes": {
+    "tz": "Asia/Tokyo",
+    "authorization": {
+      "sudo": {
+        "groups": ["admin", "wheel", "sysadmin"],
+        "users": ["hdemon"],
+        "passwordless": "true"
+      }
+    }
+  },
+  "override_attributes": {},
+  "json_class": "Chef::Role",
+  "description": "All server common configuration",
+  "chef_type": "role",
+  "run_list": [
+    "basic-packages"
+  ]
+}
