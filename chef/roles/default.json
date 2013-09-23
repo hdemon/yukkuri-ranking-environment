@@ -15,6 +15,7 @@
   "description": "All server common configuration",
   "chef_type": "role",
   "run_list": [
-    "basic-packages"
+    "basic-packages",
+    "ssh-config"
   ]
 }
