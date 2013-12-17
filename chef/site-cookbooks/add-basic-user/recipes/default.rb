@@ -15,7 +15,7 @@ end
 user 'yukkuri' do
   group 'yukkuri'
   home '/home/yukkuri'
-  password '' # http://docs.opscode.com/resource_user.html#password-shadow-hash
+  password '$1$LsmX4M2/$LJnaOS8YiOUn0cihwV.yB1' # http://docs.opscode.com/resource_user.html#password-shadow-hash
   supports :manage_home => true
   action [:create, :manage]
 end

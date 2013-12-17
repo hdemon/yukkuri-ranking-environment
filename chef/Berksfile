@@ -1,4 +1,5 @@
 site :opscode
 
+cookbook 'sudo'
 cookbook 'iptables'
 cookbook 'nginx'
