@@ -3,3 +3,5 @@ packer_cache
 .vagrant
 crash.log
 *.box
+
+chef/data_bags/users/yukkuri.json
