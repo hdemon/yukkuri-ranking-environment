@@ -1,5 +1,5 @@
 {
-  "name": "default",
+  "name": "webserver",
   "default_attributes": {
     "tz": "Asia/Tokyo",
     "authorization": {
@@ -15,8 +15,7 @@
   "description": "All server common configuration",
   "chef_type": "role",
   "run_list": [
-    "add-basic-user",
-    "basic-packages",
-    "my_iptables"
+    "iptables",
+    "nginx"
   ]
 }
