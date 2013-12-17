@@ -1,4 +1,4 @@
-## Build a vm to development
+## Build a virtual machine to development
 
 ### 1. fill public key
 
