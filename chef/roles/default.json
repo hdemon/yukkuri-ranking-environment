@@ -1,14 +1,6 @@
 {
   "name": "default",
-  "default_attributes": {
-    "tz": "Asia/Tokyo",
-    "authorization": {
-      "sudo": {
-        "groups": ["admin", "sudo", "wheel", "sysadmin"],
-        "users": ["yukkuri", "vagrant"]
-      }
-    }
-  },
+
   "override_attributes": {},
   "json_class": "Chef::Role",
   "description": "All server common configuration",

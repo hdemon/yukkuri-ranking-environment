@@ -1,4 +1,11 @@
 {
+  "tz": "Asia/Tokyo",
+  "authorization": {
+    "sudo": {
+      "groups": ["admin", "sudo", "wheel", "sysadmin"],
+      "users": ["yukkuri", "vagrant"]
+    }
+  },
   "run_list":[
     "role[default]",
     "role[webserver]"
