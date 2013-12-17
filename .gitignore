@@ -5,3 +5,4 @@ crash.log
 *.box
 
 chef/data_bags/users/yukkuri.json
+chef/site-cookbooks/add-basic-user/recipes/default.rb
