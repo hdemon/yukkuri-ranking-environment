@@ -17,6 +17,7 @@
   "run_list": [
     "add-basic-user",
     "basic-packages",
+    "ssh-config",
     "my_iptables"
   ]
 }
