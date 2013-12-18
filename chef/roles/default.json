@@ -9,6 +9,7 @@
     "add-basic-user",
     "sudo",
     "basic-packages",
+    "build-ruby",
     "ssh-config",
     "my_iptables"
   ]
