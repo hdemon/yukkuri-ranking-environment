@@ -3,3 +3,5 @@ site :opscode
 cookbook 'sudo'
 cookbook 'iptables'
 cookbook 'nginx'
+cookbook 'mysql'
+cookbook 'database'

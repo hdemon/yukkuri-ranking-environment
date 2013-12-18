@@ -1,13 +1,11 @@
 {
   "name": "webserver",
   "default_attributes": {
-    "tz": "Asia/Tokyo",
-    "authorization": {
-      "sudo": {
-        "groups": ["admin", "wheel", "sysadmin"],
-        "users": ["hdemon"],
-        "passwordless": "true"
-      }
+    "tz": "Asia/Tokyo"
+  },
+  "mysql": {
+    "client": {
+      "packages": ["mysql-client", "libmysqlclient-dev", "ruby-mysql"]
     }
   },
   "override_attributes": {},
@@ -15,7 +13,8 @@
   "description": "All server common configuration",
   "chef_type": "role",
   "run_list": [
-    "iptables",
-    "nginx"
+    "recipe[mysql::client]",
+    "recipe[mysql::server]",
+    "recipe[mysql::ruby]"
   ]
 }
