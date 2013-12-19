@@ -3,12 +3,19 @@
   "default_attributes": {
     "tz": "Asia/Tokyo"
   },
-  "mysql": {
-    "client": {
-      "packages": ["mysql-client", "libmysqlclient-dev"]
+  "override_attributes": {
+    "mysql": {
+      "client": {
+        "packages": ["mysql-client", "libmysqlclient-dev"]
+      }
+    },
+    "rbenv": {
+      "user": "yukkuri",
+      "group": "yukkuri",
+      "install_prefix": "/home/yukkuri",
+      "group_users": ["yukkuri"]
     }
   },
-  "override_attributes": {},
   "json_class": "Chef::Role",
   "description": "All server common configuration",
   "chef_type": "role",
