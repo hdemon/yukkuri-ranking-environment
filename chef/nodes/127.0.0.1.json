@@ -7,9 +7,9 @@
     }
   },
   "mysql": {
-    "server_root_password": "iloverandompasswordsbutthiswilldo",
-    "server_repl_password": "iloverandompasswordsbutthiswilldo",
-    "server_debian_password": "iloverandompasswordsbutthiswilldo"
+    "server_root_password": "fill your password",
+    "server_repl_password": "fill your password",
+    "server_debian_password": "fill your password"
   },
   "run_list":[
     "role[default]",
