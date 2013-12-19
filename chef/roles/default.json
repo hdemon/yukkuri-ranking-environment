@@ -1,12 +1,15 @@
 {
   "name": "default",
-
   "override_attributes": {},
   "json_class": "Chef::Role",
   "description": "All server common configuration",
   "chef_type": "role",
+  "build_essential": {
+    "compiletime": "true"
+  },
   "run_list": [
     "add-basic-user",
+    "build-essential",
     "sudo",
     "basic-packages",
     "build-ruby",

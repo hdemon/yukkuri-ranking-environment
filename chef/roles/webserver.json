@@ -5,7 +5,7 @@
   },
   "mysql": {
     "client": {
-      "packages": ["mysql-client", "libmysqlclient-dev", "ruby-mysql"]
+      "packages": ["mysql-client", "libmysqlclient-dev"]
     }
   },
   "override_attributes": {},
@@ -13,8 +13,8 @@
   "description": "All server common configuration",
   "chef_type": "role",
   "run_list": [
-    "recipe[mysql::client]",
-    "recipe[mysql::server]",
-    "recipe[mysql::ruby]"
+    "mysql::client",
+    "mysql::server",
+    "mysql-ruby"
   ]
 }

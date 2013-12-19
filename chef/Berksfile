@@ -1,6 +1,7 @@
 site :opscode
 
 cookbook 'sudo'
+cookbook 'build-essential'
 cookbook 'iptables'
 cookbook 'nginx'
 cookbook 'rbenv'
