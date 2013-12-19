@@ -3,7 +3,7 @@ packer_cache
 .vagrant
 crash.log
 *.box
-chef/nodes/*
+chef/nodes/*.json
 
 chef/data_bags/users/yukkuri.json
 chef/site-cookbooks/add-basic-user/recipes/default.rb
