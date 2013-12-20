@@ -14,17 +14,10 @@ rbenv_ruby "2.1.0-preview2" do
   not_if { File.exists?("/home/yukkuri/rbenv/versions/2.1.0-preview2") }
   ruby_version "2.1.0-preview2"
   global true
-  force true
 end
 
 package "gem" do
   action :install
-end
-
-execute "rbenv.global" do
-  cwd "/home/yukkuri"
-  user "yukkuri"
-  command "ls > a"
 end
 
 execute "rbenv.global" do
@@ -37,7 +30,3 @@ end
 rbenv_gem "bundler" do
   ruby_version "2.1.0-preview2"
 end
-
-# gem_package "bundler" do
-#   action :install
-# end
