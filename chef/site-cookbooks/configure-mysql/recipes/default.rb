@@ -9,20 +9,35 @@
 
 mysql_connection_info = {
   :host     => 'localhost',
-  :username => 'root'
+  :username => 'root',
+  :password => node['mysql']['server_root_password']
 }
 
 mysql_database_user 'root' do
   connection mysql_connection_info
   password   node['mysql']['server_root_password']
+  privileges [:all]
   action     :grant
 end
 
 mysql_database 'yukkuri' do
-  connection(
-    :host     => 'localhost',
-    :username => 'root',
-    :password => node['mysql']['server_root_password']
-  )
+  connection mysql_connection_info
   action :create
+end
+
+# TODO: 必要ないattributeがあるはずなので、探して消す。
+mysql_database_user 'yukkuri' do
+  connection mysql_connection_info
+  password   node['mysql']['server_yukkuri_password']
+  database_name 'yukkuri'
+  privileges [:all]
+  action     :create
+end
+
+mysql_database_user 'yukkuri' do
+  connection mysql_connection_info
+  password   node['mysql']['server_yukkuri_password']
+  database_name 'yukkuri'
+  privileges [:all]
+  action     :grant
 end
