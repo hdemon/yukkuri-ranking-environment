@@ -12,8 +12,9 @@
     "rbenv": {
       "user": "yukkuri",
       "group": "yukkuri",
+      "group_users": ["yukkuri"],
       "install_prefix": "/home/yukkuri",
-      "group_users": ["yukkuri"]
+      "version": "2.1.0-rc1"
     }
   },
   "json_class": "Chef::Role",
