@@ -15,9 +15,6 @@
     "rbenv": {
       "locked_version": "1.7.0"
     },
-    "mysql": {
-      "locked_version": "4.0.10"
-    },
     "database": {
       "locked_version": "1.5.2"
     },
@@ -53,6 +50,9 @@
     },
     "chef_handler": {
       "locked_version": "1.1.4"
+    },
+    "mysql": {
+      "locked_version": "4.0.10"
     },
     "openssl": {
       "locked_version": "1.1.0"

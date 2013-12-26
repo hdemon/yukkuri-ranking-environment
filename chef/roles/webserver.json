@@ -1,7 +1,9 @@
 {
   "name": "webserver",
+  "default_attributes": {
+    "tz": "Asia/Tokyo"
+  },
   "override_attributes": {
-    "tz": "Asia/Tokyo",
     "mysql": {
       "client": {
         "packages": ["mysql-client", "libmysqlclient-dev"]
@@ -15,7 +17,6 @@
     "mysql::client",
     "mysql::server",
     "mysql-ruby",
-    "configure-mysql",
-    "after-treatment"
+    "configure-mysql"
   ]
 }

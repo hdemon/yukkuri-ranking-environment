@@ -24,3 +24,11 @@ end
 rbenv_gem "bundler" do
   ruby_version node[:rbenv][:version]
 end
+
+execute "rbenv.global" do
+  # cwd "/home/yukkuri"
+  # user "yukkuri"
+  # command "/home/yukkuri/rbenv/bin/rbenv rehash && /home/yukkuri/rbenv/bin/rbenv versions > a"
+  # command "/home/yukkuri/rbenv/bin/rbenv global #{node[:rbenv][:version]}"
+  command "echo 2.1.0 > /home/yukkuri/rbenv/version"
+end

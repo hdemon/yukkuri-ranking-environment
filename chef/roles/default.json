@@ -14,7 +14,7 @@
       "root": "/home/yukkuri/rbenv",
       "group_users": ["yukkuri"],
       "install_prefix": "/home/yukkuri",
-      "version": "2.1.0-rc1"
+      "version": "2.1.0"
     },
     "ntp": {
       "servers": [
