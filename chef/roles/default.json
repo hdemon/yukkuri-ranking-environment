@@ -7,14 +7,30 @@
   "build_essential": {
     "compiletime": "true"
   },
+  "override_attributes": {
+    "rbenv": {
+      "user": "yukkuri",
+      "group": "yukkuri",
+      "root": "/home/yukkuri/rbenv",
+      "group_users": ["yukkuri"],
+      "install_prefix": "/home/yukkuri",
+      "version": "2.1.0-rc1"
+    },
+    "ntp": {
+      "servers": [
+        "ntp.nict.jp" 
+      ]
+    }
+  },
   "run_list": [
     "add-basic-user",
     "build-essential",
     "sudo",
     "basic-packages",
+    "basic-settings",
+    "ntp",
     "build-ruby",
     "ssh-config",
-    "my-iptables",
     "prepare-to-deploy"
   ]
 }
